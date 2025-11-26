@@ -58,7 +58,10 @@ export default function TestSection() {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/App_Quiz/assets/preguntas.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}preguntas.json`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
         const categoryTopics: { [key: string]: string[] } = {};
 
