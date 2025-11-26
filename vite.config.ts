@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/App-Quiz/', // Ruta relativa para GitHub Pages
+  base: '/App_Quiz/', // Ruta relativa para GitHub Pages
   clearScreen: false,
   server: {
     host: '0.0.0.0',

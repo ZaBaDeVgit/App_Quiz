@@ -15,7 +15,7 @@ console.warn = (message, ...args) => {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router basename="/App-Quiz">  {/* Solo usa el nombre del repositorio */}
+    <Router basename="/App_Quiz">  {/* Solo usa el nombre del repositorio */}
       <App />
     </Router>
   </StrictMode>,
