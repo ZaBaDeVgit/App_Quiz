@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://zabadevgit.github.io/App-Quiz/', // Asegúrate de que coincida con tu repositorio en GitHub
+  base: '/App-Quiz/', // Ruta relativa para GitHub Pages
   clearScreen: false,
   server: {
     host: '0.0.0.0',
